@@ -45,3 +45,4 @@
 
 # WIFI
 /sys/module/bcmdhd/parameters/firmware_path               u:object_r:sysfs_wlan_fwpath:s0
+/dev/socket/wifihal(/.*)?                                 u:object_r:wifihal_socket:s0
