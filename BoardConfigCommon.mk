@@ -25,6 +25,16 @@ PRODUCT_PLATFORM := shinano
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y vmalloc=300M
 
+# Disable SELinux
+# BOARD_KERNEL_CMDLINE += enforcing=0 androidboot.selinux=permissive 
+
+# Kernel Loglevel
+# BOARD_KERNEL_CMDLINE += loglevel=7
+
+# Kernel add brcmfmac debug level. See brcmfmac/debug.h for description.
+# BOARD_KERNEL_CMDLINE +=  brcmfmac.debug=0x1DFF5D
+# 0x16001E 0x1DFFDF 0x1DFF5D
+
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
