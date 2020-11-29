@@ -53,9 +53,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path="/data/vendor/bluetooth/bluetooth_bdaddr" \
     ro.rfkilldisabled=1
 
+# Wi-Fi interface name - not required to be set as these are the default names already
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    wifi.interface=wlan0 \
+#    wifi.direct.interface=p2p0
+
 # macaddrsetup
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.wifi.addr_path="/sys/devices/platform/bcmdhd_wlan/macaddr"
+    ro.vendor.wifi.addr_path="/sys/devices/msm_sdcc.3/mmc_host/mmc0/mmc0:0001/mmc0:0001:1/net/wlan0/address"
 
 # Semc
 PRODUCT_PROPERTY_OVERRIDES += \
