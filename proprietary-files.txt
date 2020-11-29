@@ -358,9 +358,9 @@ etc/firmware/venus.b04:vendor/firmware/venus.b04
 etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
-# Wifi firmware
-etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin:vendor/firmware/fw_bcmdhd_apsta.bin
-etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin:vendor/firmware/fw_bcmdhd.bin
+# Wifi firmware - from LineageOS/android_hardware_broadcom_wlan/commit/a212eadf7804250f198c531cd30abd21d93c5a04 fw_bcmdhd.bin and related license file
+vendor/firmware/brcm/brcmfmac4339-sdio.bin|d0f8ec2de2c5b25346a489a082dd4f07b6c3d72d
+vendor/firmware/brcm/brcmfmac4339-sdio_LICENSE.TXT|ff3ebc72b6df852a76288efb8100fb2de229733a
 
 # Wifi regulatory database - from kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb tag master-2020-11-20
 vendor/firmware/regulatory.db|a2503011c3451656167bb3e59f9c582b1eac7cf4
