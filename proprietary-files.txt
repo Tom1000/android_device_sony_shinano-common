@@ -361,3 +361,6 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 # Wifi firmware
 etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin:vendor/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin:vendor/firmware/fw_bcmdhd.bin
+
+# Wifi regulatory database - from kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb tag master-2020-11-20
+vendor/firmware/regulatory.db|a2503011c3451656167bb3e59f9c582b1eac7cf4
